@@ -1,24 +1,5 @@
-     .testimonial-card {
-      position: relative;
-      padding-top: 2.5rem;
-    }
-    .testimonial-card .quote-icon {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      font-size: 3rem;
-      color: #FFDD57;
-      line-height: 1;
-    }
-    .testimonial-card .card-body {
-      padding: 1.5rem;
-    }
-    .testimonial-card .avatar {
-      width: 48px;
-      height: 48px;
-      object-fit: cover;
-    }
-    .product-team-solution-section {
+
+ .product-team-solution-section {
   background-color: #14122b;
   color: #ffffff;
 }
@@ -61,8 +42,34 @@
     }
 
     .brand-logo {
-      max-height: 60px;
+      max-height: 72px;
     }
+   
+   .scrolling-container {
+      overflow: hidden;
+      white-space: nowrap;
+      background-color: #f8f9fc;
+      padding: 2rem 0;
+    }
+
+    .scrolling-track {
+      display: inline-block;
+      animation: scroll-left 60s linear infinite;
+    }
+
+    .scrolling-track .badge {
+      margin-right: 1rem;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
     .bg-light-green {
       background-color: #e6f7f1;
     }
@@ -125,7 +132,7 @@
       margin-right: 1rem;
     }
 
-   @keyframes scroll-left {
+@keyframes scroll-left {
   0% {
     transform: translateX(100%);
   }
@@ -144,3 +151,53 @@
   overflow: hidden;
   position: relative;
 }
+.testimonial-card {
+      position: relative;
+      padding-top: 2.5rem;
+    }
+    .testimonial-card .quote-icon {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      font-size: 3rem;
+      color: #FFDD57;
+      line-height: 1;
+    }
+    .testimonial-card .card-body {
+      padding: 1.5rem;
+    }
+    .testimonial-card .avatar {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+    }
+    .product-team-solution-section {
+  background-color: #14122b;
+  color: #ffffff;
+}
+
+.table th, .table td {
+      vertical-align: middle;
+      text-align: center;
+    }
+    .bg-crayond {
+      background-color: #e8f5e9;
+    }
+    .highlight-crayond {
+      background-color: #c8e6c9;
+      font-weight: bold;}
+      
+  .highlight {
+    font-weight: 700;
+    display: inline-block;
+    padding: 2px 4px; 
+    border-radius: 4px; 
+    line-height: 0.7; 
+    
+}
+.bg-purple { background-color: #ede5ff; }
+.bg-orange { background-color: #fdedd8; }
+.bg-pink   { background-color: #fde0f3; }
+.bg-green  { background-color: #e8f8ee; }
+.bg-blue   { background-color: #e4ebf8; }
+
